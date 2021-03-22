@@ -5,11 +5,12 @@ import GitHub from '../components/section/GitHub';
 import Main from '../components/Main';
 import Blog from '../components/section/Blog';
 import Stack from '../components/section/Stack';
-import Project from '../components/section/Projects';
+import Projects from '../components/section/Projects';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 import Header2 from '../components/Header2';
 import Section from '../components/section/Section';
+import { Element } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -18,18 +19,28 @@ const Home = () => {
       <Header2 />
       <Main>
         <Fade>
-          <About />
+          <Element name="about" className="element">
+            <About />
+          </Element>
         </Fade>
-        <Section style={{ backgroundColor: '#f8f9fa' }}>
-          <Fade>
-            <GitHub />
-            <Blog />
-          </Fade>
-        </Section>
-        <Stack />
-        <Project />
+        <Element name="gb" className="element">
+          <Section style={{ backgroundColor: '#f8f9fa' }}>
+            <Fade>
+              <GitHub />
+              <Blog />
+            </Fade>
+          </Section>
+        </Element>
+        <Element name="skills" className="element">
+          <Stack />
+        </Element>
+        <Element name="portfolio" className="element">
+          <Projects />
+        </Element>
       </Main>
-      <Footer />
+      <Element name="contact" className="element">
+        <Footer />
+      </Element>
     </>
   );
 };

@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
+import { useCallback } from 'react';
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -40,39 +42,64 @@ const StyledMenu = styled.nav`
   }
 `;
 
-const Menu = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
+  const onClick = useCallback(() => setOpen(false), [setOpen]);
   return (
     <StyledMenu open={open}>
-      <a href="/">
+      <Link
+        to="about"
+        spy={true}
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+      >
         <span role="img" aria-label="about us">
           💁🏻‍♂️
         </span>
         About Me
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="gb" spy={true} smooth={true} duration={500} onClick={onClick}>
         <span role="img" aria-label="price">
           🐙
         </span>
         GITHUB/BLOG
-      </a>
-      <a href="/">
+      </Link>
+      <Link
+        to="skills"
+        spy={true}
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+      >
         <span role="img" aria-label="contact">
           📚
         </span>
         SKILLS
-      </a>
-      <a href="/">
+      </Link>
+      <Link
+        to="portfolio"
+        spy={true}
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+      >
         <span role="img" aria-label="contact">
           🌎
         </span>
         PORTFOLIO
-      </a>
-      <a href="/">
+      </Link>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+      >
         <span role="img" aria-label="contact">
           📩
         </span>
         CONTACT
-      </a>
+      </Link>
     </StyledMenu>
   );
 };

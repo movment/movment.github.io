@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import M from './Burger/Menu';
 import Burger from './Burger/Burger';
+import { Link } from 'react-scroll';
 
 const StyledNav = styled.nav`
   height: ${({ scroll }) => (scroll ? '40px' : '80px')};
@@ -51,7 +52,7 @@ const HMenu = styled.div`
     display: block;
   }
 `;
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   display: inline-block;
   padding: 0 1rem;
   font-size: 1rem;
@@ -92,11 +93,21 @@ const Nav = () => {
       <Container>
         <Title>DOIN</Title>
         <Menu>
-          <StyledLink href="#about">ABOUT</StyledLink>
-          <StyledLink href="#gb">GITHUB/BLOG</StyledLink>
-          <StyledLink href="#skills">SKILLS</StyledLink>
-          <StyledLink href="#portfolio">PORTFOLIO</StyledLink>
-          <StyledLink href="#contact">CONTACT</StyledLink>
+          <StyledLink to="about" spy={true} smooth={true} duration={500}>
+            ABOUT
+          </StyledLink>
+          <StyledLink to="gb" spy={true} smooth={true} duration={500}>
+            GITHUB/BLOG
+          </StyledLink>
+          <StyledLink to="skills" spy={true} smooth={true} duration={500}>
+            SKILLS
+          </StyledLink>
+          <StyledLink to="portfolio" spy={true} smooth={true} duration={500}>
+            PORTFOLIO
+          </StyledLink>
+          <StyledLink to="contact" spy={true} smooth={true} duration={500}>
+            CONTACT
+          </StyledLink>
         </Menu>
         <HMenu ref={node}>
           <Burger open={open} setOpen={setOpen} />

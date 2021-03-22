@@ -17,7 +17,6 @@ const Wrapper = styled.section`
   }
 `;
 const Section = ({ children, ...props }) => {
-  console.log(props);
   return <Wrapper {...props}>{children}</Wrapper>;
 };
 
