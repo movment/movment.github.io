@@ -56,7 +56,12 @@ const StyledLink = styled(Link)`
   display: inline-block;
   padding: 0 1rem;
   font-size: 1rem;
+  cursor: pointer;
   font-weight: 600;
+  transition: 0.1s color ease-in;
+  &:hover {
+    color: rgba(200, 200, 200, 0.9);
+  }
 `;
 const useOnClickOutside = (ref, handler) => {
   useEffect(() => {
