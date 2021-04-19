@@ -1,0 +1,72 @@
+{
+  "diSlack": {
+    "title": "diSlack",
+    "notion": "https://www.notion.so/diSlack-with-Crong-c8c8e01b36d14ead84d38aa6066577ed",
+    "content": "다양한 사람들과 소통을 할 수 있는 플랫폼입니다.",
+    "did": [
+      "RESTful API 개발",
+      "DB 스키마 정의",
+      "Authentication 구현",
+      "WebSocket으로 실시간 채팅 기능 구현",
+      "메일로 초대 링크 보내는 기능 구현"
+    ],
+    "stack": [
+      "React",
+      "Node / Express",
+      "WebSocket",
+      "Sequelize / MySQL",
+      "AWS S3, EC2, RDS"
+    ],
+    "imgSrc": "/diSlack.png",
+    "gitHub": {
+      "client": "https://github.com/movment/diSlack_client",
+      "server": "https://github.com/movment/diSlack_server"
+    }
+  },
+  "bookHunt": {
+    "title": "BookHunt",
+    "content": "책들을 검색하고 리뷰를 남길 수 플랫폼입니다.",
+    "imgSrc": "BookHunt.png",
+    "did": [
+      "풀스택 1인 개발",
+      "Pagenation, Modal, 검색 Highlight 기능 구현",
+      "GraphQL API 개발",
+      "Social Login 구현",
+      "크롤링"
+    ],
+    "stack": [
+      "TypeScript",
+      "React",
+      "Node",
+      "Apollo-client / graphql-yoga",
+      "TypeORM / MySQL",
+      "Styled-Components"
+    ],
+    "gitHub": {
+      "client": "https://github.com/movment/bookhunt-client",
+      "server": "https://github.com/movment/bookhunt-server"
+    }
+  },
+  "tweet": {
+    "title": "Tweet",
+    "content": "SNS",
+    "imgSrc": "BookHunt.png",
+    "did": [
+      "풀스택 1인 개발",
+      "Next.js 사용하여 서버 사이드 렌더링",
+      "RESTful API 구현",
+      "Social Login 구현"
+    ],
+    "stack": [
+      "React",
+      "Node",
+      "Express",
+      "Sequelize / MySQL",
+      "Styled-Components"
+    ],
+    "gitHub": {
+      "client": "https://github.com/movment/tw-front",
+      "server": "https://github.com/movment/tb"
+    }
+  }
+}
