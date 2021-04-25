@@ -4,11 +4,11 @@
     "notion": "https://www.notion.so/diSlack-with-Crong-c8c8e01b36d14ead84d38aa6066577ed",
     "content": "다양한 사람들과 소통을 할 수 있는 플랫폼입니다.",
     "did": [
-      "RESTful API 개발",
-      "DB 스키마 정의",
-      "Authentication 구현",
+      "DB 스키마 정의 및 전반적인 서버 기능 구현",
       "WebSocket으로 실시간 채팅 기능 구현",
-      "메일로 초대 링크 보내는 기능 구현"
+      "전반적인 API 구현",
+      "메일로 초대 링크 보내는 기능 구현",
+      "AWS EC2 및 RDS를 사용하여 배포"
     ],
     "stack": [
       "React",
@@ -29,18 +29,19 @@
     "imgSrc": "BookHunt.png",
     "did": [
       "풀스택 1인 개발",
-      "Pagenation, Modal, 검색 Highlight 기능 구현",
-      "GraphQL API 개발",
+      "GraphQL API 구현",
+      "크롤링",
+      "Pagenation, Modal, 검색 Highlight 등 UI 구현",
       "Social Login 구현",
-      "크롤링"
+      "DB 스키마 정의 및 전반적인 서버 기능 구현"
     ],
     "stack": [
       "TypeScript",
       "React",
-      "Node",
+      "Styled-Components",
       "Apollo-client / graphql-yoga",
-      "TypeORM / MySQL",
-      "Styled-Components"
+      "Node / Express",
+      "TypeORM / MySQL"
     ],
     "gitHub": {
       "client": "https://github.com/movment/bookhunt-client",
@@ -54,14 +55,17 @@
     "did": [
       "풀스택 1인 개발",
       "Next.js 사용하여 서버 사이드 렌더링",
-      "Social Login 구현"
+      "반응형 웹 구현",
+      "Social Login 구현",
+      "DB 스키마 정의 및 전반적인 서버 기능 구현",
+      "nginx 사용 및 개인 웹서버로 배포"
     ],
     "stack": [
       "React",
-      "Node",
-      "Express",
-      "Sequelize / MySQL",
-      "Styled-Components"
+      "Next.js",
+      "Styled-Components",
+      "Node / Express",
+      "Sequelize / MySQL"
     ],
     "gitHub": {
       "client": "https://github.com/movment/tw-front",
