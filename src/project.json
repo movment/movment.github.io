@@ -6,9 +6,9 @@
     "did": [
       "백앤드 개발",
       "DB 스키마 정의 및 전반적인 서버 기능 구현",
+      "권한을 확인하는 Express 미들웨어 구현",
       "웹소켓으로 실시간 채팅 기능 구현",
       "RESTful API 구현",
-      "권한을 확인하는 Express 미들웨어 구현",
       "AWS EC2 및 RDS를 사용하여 배포"
     ],
     "stack": [
@@ -30,11 +30,12 @@
     "imgSrc": "BookHunt.png",
     "did": [
       "풀스택 1인 개발",
-      "React 컴포넌트 계층 구조 설계",
       "Apollo boost를 사용하여 상태 관리",
+      "검색어 입력시 네트워크 요청을 줄이기 위해 디바운싱 사용",
       "Graphql yoga를 사용하여 API 구현",
       "DB 스키마 정의 및 전반적인 서버 기능 구현",
       "Pagenation, Modal, 검색 Highlight 등 UI 구현",
+      "소셜 로그인 구현",
       "크롤링을 통해 데이터 수집"
     ],
     "stack": [
@@ -57,9 +58,10 @@
     "did": [
       "풀스택 1인 개발",
       "Next.js 사용하여 서버 사이드 렌더링",
+      "쿠키 및 JWT를 사용하여 프론트엔드 서버에서 사용자 정보를 가져오도록 구현",
+      "네트워크 요청의 상태를 추적하기 위한 loading reducer 구현",
+      "스크롤 이벤트 발생 시 연산을 줄이기 위해 쓰로틀링 사용",
       "반응형 웹 구현",
-      "React 컴포넌트 계층 구조 설계 ",
-      "Redux 스토어 설계",
       "DB 스키마 정의 및 전반적인 서버 기능 구현",
       "nginx 사용 및 개인 웹서버로 배포"
     ],
@@ -72,7 +74,8 @@
     ],
     "gitHub": {
       "client": "https://github.com/movment/tw-front",
-      "server": "https://github.com/movment/tb"
+      "server": "https://github.com/movment/tb",
+      "demo": "https://doinki.com"
     }
   }
 }
