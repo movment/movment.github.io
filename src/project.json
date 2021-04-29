@@ -1,13 +1,14 @@
 {
   "diSlack": {
     "title": "diSlack",
-    "notion": "https://www.notion.so/diSlack-with-Crong-c8c8e01b36d14ead84d38aa6066577ed",
-    "content": "다양한 사람들과 소통을 할 수 있는 플랫폼입니다.",
+    "notion": "https://www.notion.so/Crong-29f7a463a9e64853b713c5b9f9fad88f",
+    "content": "슬랙을 클론하여 진행한 팀 프로젝트입니다",
     "did": [
+      "백앤드 개발",
       "DB 스키마 정의 및 전반적인 서버 기능 구현",
-      "WebSocket으로 실시간 채팅 기능 구현",
-      "전반적인 API 구현",
-      "메일로 초대 링크 보내는 기능 구현",
+      "웹소켓으로 실시간 채팅 기능 구현",
+      "RESTful API 구현",
+      "권한을 확인하는 Express 미들웨어 구현",
       "AWS EC2 및 RDS를 사용하여 배포"
     ],
     "stack": [
@@ -25,21 +26,22 @@
   },
   "bookHunt": {
     "title": "BookHunt",
-    "content": "책들을 검색하고 리뷰를 남길 수 플랫폼입니다.",
+    "content": "다양한 책들을 검색하고 리뷰를 남길 수 있는 웹 프로젝트입니다",
     "imgSrc": "BookHunt.png",
     "did": [
       "풀스택 1인 개발",
-      "GraphQL API 구현",
-      "크롤링",
+      "React 컴포넌트 계층 구조 설계",
+      "Apollo boost를 사용하여 상태 관리",
+      "Graphql yoga를 사용하여 API 구현",
+      "DB 스키마 정의 및 전반적인 서버 기능 구현",
       "Pagenation, Modal, 검색 Highlight 등 UI 구현",
-      "Social Login 구현",
-      "DB 스키마 정의 및 전반적인 서버 기능 구현"
+      "크롤링을 통해 데이터 수집"
     ],
     "stack": [
       "TypeScript",
       "React",
       "Styled-Components",
-      "Apollo-client / graphql-yoga",
+      "Apollo-boost / graphql-yoga",
       "Node / Express",
       "TypeORM / MySQL"
     ],
@@ -50,19 +52,20 @@
   },
   "tweet": {
     "title": "Tweet",
-    "content": "SNS",
-    "imgSrc": "BookHunt.png",
+    "content": "트위터를 클론하여 개발중인 웹 프로젝트입니다",
+    "imgSrc": "Tweet.png",
     "did": [
       "풀스택 1인 개발",
       "Next.js 사용하여 서버 사이드 렌더링",
       "반응형 웹 구현",
-      "Social Login 구현",
+      "React 컴포넌트 계층 구조 설계 ",
+      "Redux 스토어 설계",
       "DB 스키마 정의 및 전반적인 서버 기능 구현",
       "nginx 사용 및 개인 웹서버로 배포"
     ],
     "stack": [
-      "React",
-      "Next.js",
+      "React / Next.js",
+      "Redux-toolkit",
       "Styled-Components",
       "Node / Express",
       "Sequelize / MySQL"
