@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -43,7 +43,9 @@ const StyledMenu = styled.nav`
 `;
 
 const Menu = ({ open, setOpen }) => {
-  const onClick = useCallback(() => setOpen(false), [setOpen]);
+  const onClick = useCallback(() => {
+    setOpen(false);
+  }, [setOpen]);
   return (
     <StyledMenu open={open}>
       <Link
