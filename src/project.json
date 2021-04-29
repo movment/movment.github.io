@@ -27,7 +27,7 @@
   "bookHunt": {
     "title": "BookHunt / 개인 프로젝트",
     "content": "다양한 책들을 검색하고 리뷰를 남길 수 있는 웹 프로젝트입니다",
-    "imgSrc": "BookHunt.png",
+    "imgSrc": "BookHuntSearch.png",
     "did": [
       "풀스택 1인 개발",
       "Apollo boost를 사용하여 상태 관리",
