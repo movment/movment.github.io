@@ -34,7 +34,7 @@ const Container = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  width: 70%;
+  width: 90%;
   /* height: 400px; */
   @media (max-width: 576px) {
     width: 100%;
@@ -46,7 +46,7 @@ const Container = styled.div`
 const BlockContinaer = styled.div`
   display: flex;
   justify-content: center;
-  @media (max-width: 576px) {
+  @media (max-width: 686px) {
     flex-direction: column;
   }
 `;
