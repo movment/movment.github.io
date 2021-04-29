@@ -43,7 +43,11 @@ const ImgWrapper = styled.div`
   }
 `;
 const Img = styled.img`
+  cursor: pointer;
   width: 100%;
+  &:hover {
+    filter: blur(2px);
+  }
 `;
 
 const Project = ({ title, notion, content, imgSrc, gitHub, did, stack }) => {
@@ -90,7 +94,13 @@ const Project = ({ title, notion, content, imgSrc, gitHub, did, stack }) => {
         </Left>
         <Right>
           <ImgWrapper>
-            <Img src={imgSrc} alt="Project" />
+            <Img
+              src={imgSrc}
+              alt="Project"
+              onClick={() => {
+                window.open(gitHub.client);
+              }}
+            />
           </ImgWrapper>
           <Heading size="1.25em">🐙 GitHub</Heading>
           <div>
@@ -115,6 +125,19 @@ const Project = ({ title, notion, content, imgSrc, gitHub, did, stack }) => {
               Server repository
             </a>
           </div>
+          {gitHub.demo && (
+            <div>
+              -{' '}
+              <a
+                href={gitHub.demo}
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: 'underline' }}
+              >
+                Demo
+              </a>
+            </div>
+          )}
         </Right>
       </Content>
     </Wrapper>
