@@ -97,7 +97,7 @@ const Header2 = () => {
         <Face src="/itsme.jpg" alt="face" />
         <Heading>Hello, world!</Heading>
         <P>
-          안녕하세요, 신입 개발자 <b>김동인</b>입니다.
+          안녕하세요, 프론트엔드 개발자 <b>김동인</b>입니다.
         </P>
       </Container>
       <div>
