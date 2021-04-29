@@ -83,7 +83,7 @@ const Nav = () => {
   const [scroll, setScroll] = useState(false);
   const node = useRef();
   const onScroll = useCallback((e) => {
-    const scrollTop = e.srcElement.scrollingElement.scrollTop;
+    const scrollTop = e.srcElement.documentElement.scrollTop;
 
     if (scrollTop >= 100) setScroll(true);
     else setScroll(false);
@@ -92,6 +92,14 @@ const Nav = () => {
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
   }, [onScroll]);
+  useEffect(() => {
+    if (open) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = 'auto';
+    // return () => {
+    //   document.body.style.overflow = 'unset';
+    // };
+  }, [open]);
+
   useOnClickOutside(node, () => setOpen(false));
   return (
     <StyledNav scroll={scroll}>
