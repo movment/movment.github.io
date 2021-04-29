@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.main`
+const Wrapper = styled.div`
   /* padding: 0 96px; */
 `;
 const Main = ({ children }) => {
