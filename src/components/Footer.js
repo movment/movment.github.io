@@ -3,10 +3,12 @@ import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   display: flex;
-  height: 600px;
-  padding: 100px;
-  /* justify-content: center; */
+  height: 300px;
+  padding: 50px;
   background-color: #2c3e50;
+  @media (max-width: 787px) {
+    padding: 16px;
+  }
 `;
 const Heading = styled.div`
   font-size: 3rem;
@@ -27,6 +29,9 @@ const Comment = styled.div`
 `;
 const Info = styled.div`
   color: inherit;
+  & > span {
+    color: white;
+  }
 `;
 const Footer = () => {
   return (
@@ -34,11 +39,18 @@ const Footer = () => {
       <Contact>
         <Heading size="3.5rem">CONTACT ME</Heading>
         <Container>
-          <Comment>
-            제 포트폴리오를 봐주셔서 감사합니다. 문의사항이 있으시다면 언제든
-            편하게 연락주시기 바랍니다. 항상 다양한 의견을 듣고 배우겠습니다.
-          </Comment>
-          <Info>EMAIL: doinki94@gmail.com</Info>
+          {/* <Comment>
+            편하게 연락주시기 바랍니다.
+            <br />
+            항상 다양한 의견을 듣고 배우겠습니다.
+          </Comment> */}
+          <Info>
+            <span>Email:&nbsp;&nbsp;</span>
+            <span>doinki94@gmail.com</span>
+            <br />
+            <span>Phone:&nbsp;&nbsp;</span>
+            <span>010-9541-0101</span>
+          </Info>
         </Container>
       </Contact>
     </StyledFooter>
