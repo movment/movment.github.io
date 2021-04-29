@@ -5,10 +5,10 @@ import GlobalStyle from './lib/styles/GlobalStyle';
 
 const App = () => {
   return (
-    <>
+    <React.Fragment>
       <GlobalStyle />
       <Home />
-    </>
+    </React.Fragment>
   );
 };
 
