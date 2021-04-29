@@ -13,7 +13,7 @@ const Wrapper = styled.section`
     padding: 20px 10px;
   }
   @media (max-width: 1023px) {
-    padding: 40px;
+    padding: 16px;
   }
 `;
 const Section = ({ children, ...props }) => {
