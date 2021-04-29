@@ -51,28 +51,35 @@ const Stack = () => {
             <Container>
               <Key>JavaScript</Key>
               <Bar
-                percent="80%"
+                percent="85%"
                 color="linear-gradient(90deg,#cc5285,#e0aaf2)"
               />
             </Container>
             <Container>
               <Key>React</Key>
               <Bar
-                percent="80%"
+                percent="85%"
                 color="linear-gradient(90deg,#7ea1e5,#aaaaf2)"
               />
             </Container>
             <Container>
               <Key>Redux</Key>
               <Bar
+                percent="85%"
+                color="linear-gradient(90deg,#f2bcaa,#a87ee5)"
+              />
+            </Container>
+            <Container>
+              <Key>Next.js</Key>
+              <Bar
                 percent="80%"
                 color="linear-gradient(90deg,#f2bcaa,#a87ee5)"
               />
             </Container>
             <Container>
-              <Key>GraphQL</Key>
+              <Key>Apollo-client</Key>
               <Bar
-                percent="65%"
+                percent="60%"
                 color="linear-gradient(90deg,#cc5285,#e57e88)"
               />
             </Container>
@@ -85,7 +92,7 @@ const Stack = () => {
             </Container>
 
             <Container>
-              <Key>Sequelize / Typeorm</Key>
+              <Key>Sequelize</Key>
               <Bar percent="75%" />
             </Container>
             <Container>
