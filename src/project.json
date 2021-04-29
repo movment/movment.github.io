@@ -1,6 +1,6 @@
 {
   "diSlack": {
-    "title": "diSlack",
+    "title": "diSlack / 팀 프로젝트",
     "notion": "https://www.notion.so/Crong-29f7a463a9e64853b713c5b9f9fad88f",
     "content": "슬랙을 클론하여 진행한 팀 프로젝트입니다",
     "did": [
@@ -25,7 +25,7 @@
     }
   },
   "bookHunt": {
-    "title": "BookHunt",
+    "title": "BookHunt / 개인 프로젝트",
     "content": "다양한 책들을 검색하고 리뷰를 남길 수 있는 웹 프로젝트입니다",
     "imgSrc": "BookHunt.png",
     "did": [
@@ -51,7 +51,7 @@
     }
   },
   "tweet": {
-    "title": "Tweet",
+    "title": "Tweet / 개인 프로젝트",
     "content": "트위터를 클론하여 개발중인 웹 프로젝트입니다",
     "imgSrc": "Tweet.png",
     "did": [
