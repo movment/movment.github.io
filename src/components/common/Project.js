@@ -12,7 +12,7 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 50px;
-  @media (max-width: 576px) {
+  @media (max-width: 787px) {
     flex-direction: column-reverse;
     padding: 0;
   }
@@ -22,7 +22,7 @@ const HeadContainer = styled.div`
 `;
 const Left = styled.div`
   width: 50%;
-  @media (max-width: 576px) {
+  @media (max-width: 787px) {
     width: 100%;
   }
 `;
@@ -31,12 +31,19 @@ const Right = styled.div`
   flex-direction: column;
   /* align-items: center; */
   width: 50%;
-  @media (max-width: 576px) {
+  @media (max-width: 787px) {
     width: 100%;
   }
 `;
+const ImgWrapper = styled.div`
+  display: inline-block;
+  max-height: 450px;
+  @media (max-width: 787px) {
+    max-height: 420px;
+  }
+`;
 const Img = styled.img`
-  width: 90%;
+  width: 100%;
 `;
 
 const Project = ({ title, notion, content, imgSrc, gitHub, did, stack }) => {
@@ -82,7 +89,9 @@ const Project = ({ title, notion, content, imgSrc, gitHub, did, stack }) => {
           </HeadContainer>
         </Left>
         <Right>
-          <Img src={imgSrc} alt="Project" />
+          <ImgWrapper>
+            <Img src={imgSrc} alt="Project" />
+          </ImgWrapper>
           <Heading size="1.25em">🐙 GitHub</Heading>
           <div>
             -{' '}
