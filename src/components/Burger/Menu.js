@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
-import { useCallback, useEffect } from 'react';
+import { useCallback } from 'react';
+
+const SLink = styled(Link)`
+  cursor: pointer;
+`;
 
 const StyledMenu = styled.nav`
   display: flex;
@@ -48,7 +52,7 @@ const Menu = ({ open, setOpen }) => {
   }, [setOpen]);
   return (
     <StyledMenu open={open}>
-      <Link
+      <SLink
         to="about"
         spy={true}
         smooth={true}
@@ -59,14 +63,14 @@ const Menu = ({ open, setOpen }) => {
           💁🏻‍♂️
         </span>
         About Me
-      </Link>
-      <Link to="gb" spy={true} smooth={true} duration={500} onClick={onClick}>
+      </SLink>
+      <SLink to="gb" spy={true} smooth={true} duration={500} onClick={onClick}>
         <span role="img" aria-label="price">
           🐙
         </span>
         GITHUB/BLOG
-      </Link>
-      <Link
+      </SLink>
+      <SLink
         to="skills"
         spy={true}
         smooth={true}
@@ -77,8 +81,8 @@ const Menu = ({ open, setOpen }) => {
           📚
         </span>
         SKILLS
-      </Link>
-      <Link
+      </SLink>
+      <SLink
         to="portfolio"
         spy={true}
         smooth={true}
@@ -89,8 +93,8 @@ const Menu = ({ open, setOpen }) => {
           🌎
         </span>
         PORTFOLIO
-      </Link>
-      <Link
+      </SLink>
+      <SLink
         to="contact"
         spy={true}
         smooth={true}
@@ -101,7 +105,7 @@ const Menu = ({ open, setOpen }) => {
           📩
         </span>
         CONTACT
-      </Link>
+      </SLink>
     </StyledMenu>
   );
 };
