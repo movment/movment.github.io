@@ -23,10 +23,10 @@ const Container = styled.div`
   justify-content: space-between;
   color: inherit;
 `;
-const Comment = styled.div`
-  margin-bottom: 30px;
-  color: inherit;
-`;
+// const Comment = styled.div`
+//   margin-bottom: 30px;
+//   color: inherit;
+// `;
 const Info = styled.div`
   color: inherit;
   & > span {
